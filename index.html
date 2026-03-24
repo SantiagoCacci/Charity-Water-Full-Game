@@ -1,24 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Water Flow</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
 
   <h1>💧 Water Flow</h1>
-  <p>Help deliver clean water by connecting the pipes!</p>
+  <p>Connect the pipes to deliver clean water!</p>
 
-  <!-- Start Screen -->
+  <!-- START SCREEN -->
   <div id="startScreen">
-    <h2>Ready to deliver clean water?</h2>
+    <h2>Ready to play?</h2>
     <button id="startBtn">Start Game</button>
   </div>
 
-  <!-- Game UI -->
+  <!-- GAME UI -->
   <div id="gameUI" style="display:none;">
+    
+    <label>
+      Select Difficulty:
+      <select id="difficulty">
+        <option value="easy">Easy (4x4)</option>
+        <option value="medium" selected>Medium (5x5)</option>
+        <option value="hard">Hard (6x6)</option>
+      </select>
+    </label>
+
     <p>Moves: <span id="moves">0</span></p>
 
     <button id="resetBtn">Reset</button>
+    <button id="checkBtn">Check Water Flow 💧</button>
 
     <div id="gameBoard"></div>
+
+    <p class="footer">
+      Support clean water initiatives 💧 <br>
+      <a href="https://www.charitywater.org/" target="_blank">Website</a> |
+      <a href="https://www.charitywater.org/donate" target="_blank">Donate</a>
+    </p>
+
   </div>
 
   <script src="script.js"></script>
-  
-<link rel="stylesheet" href="styles.css">
 </body>
+</html>

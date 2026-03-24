@@ -5,14 +5,12 @@ body {
   margin: 0;
 }
 
-/* Title */
 h1 {
   margin-top: 20px;
   font-size: 40px;
   color: #1f3c5a;
 }
 
-/* Button */
 button {
   padding: 12px 25px;
   font-size: 16px;
@@ -21,22 +19,15 @@ button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  margin-top: 10px;
+  margin: 10px;
 }
 
 button:hover {
   background: #1c8ec2;
 }
 
-/* Moves */
-#moves {
-  font-weight: bold;
-}
-
-/* Game board container */
 #gameBoard {
   display: grid;
-  grid-template-columns: repeat(5, 70px);
   gap: 12px;
   justify-content: center;
   margin: 30px auto;
@@ -46,16 +37,30 @@ button:hover {
   width: fit-content;
 }
 
-/* Pipe base */
+/* PIPE TILE */
 .pipe {
   width: 70px;
   height: 70px;
-  background: white;
+  background-color: white;
   border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  cursor: pointer;
+  border: 2px solid #2daae1;
+
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+
   transition: transform 0.2s;
+}
+
+/* START / END */
+.start {
+  border: 3px solid green;
+}
+
+.end {
+  border: 3px solid orange;
+}
+
+.footer {
+  margin-top: 20px;
 }
